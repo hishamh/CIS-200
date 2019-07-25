@@ -27,7 +27,6 @@
 
 */
 
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -53,14 +52,12 @@ public:
     vector<crate>frontvies;
     vector<crate>sideView;
 
-
    //this will make max number in sideview camera as false so that we don't touch max number
     void sideViewTaken(){
 
         //loop through the rows to find the max number and market as false so that we do not touch it later
         for(int i =0;i<all_cameraViews.size();i++){
             findMaxSideView(i)->take=false;
-
         }
     }
 
@@ -71,8 +68,6 @@ public:
         for(int i =0;i<all_cameraViews[0].size();i++){
 
             findMaxFrontView(i)->take=false; //mark the max as false so that we do not touch it latter on
-
-
         }
     }
 
@@ -88,14 +83,11 @@ public:
                 index = i; //update the index of the current found max to be send the location another func
 
             }
-
         }
         mx.num=max;
         mx.dim = index;
         frontvies.push_back(mx); //push_back the found max to the frontviees
         return &all_cameraViews[index][col];
-
-
     }
 
     crate * findMaxSideView(int row){
@@ -129,12 +121,9 @@ public:
 
         all_cameraViews.push_back(allGrides); //the the information of vector for each row
         allGrides.clear(); //clear the vector so that we can save new row on it
-
     }
 
     void swapMartix(){
-
-
 
         for( int i = 0; i<all_cameraViews.size();i++){
 
@@ -180,7 +169,6 @@ public:
     }
 
 };
-
 
 int main(int argc, const char * argv[]) {
 

@@ -1,0 +1,66 @@
+	    Removing off comments
+---------------------------------------------
+
+
+int gcd (int u, int v)
+{
+    if(v==0) return u;
+    else return gcd(v,u-u/v*v);
+int i = 60;
+float s = 3.75
+
+
+    
+
+}
+void main(void)
+{
+    
+    int x; int y;
+    x = input(); y = input();
+    output(gcd(x,y))
+
+}
+
+
+
+
+Key Word				Index
+---------------------------------------------
+if					   1
+else					   2
+void					   3
+return					   4
+float					   5
+int					   6
+main					   7
+
+
+NUM		Index		Attribute
+-----------------------------------------
+60		1		Integer
+3.75		2		Float
+3		3		Integer
+
+
+
+Token		Class		Index
+-------------------------------------
+gcd		id		1
+output		id		2
+input		id		3
+u		id		4
+v		id		5
+x		id		6
+y		id		7
+s		id		8
+if		kw		9
+else		kw		10
+void		kw		11
+return		kw		12
+float		kw		13
+int		kw		14
+main		kw		15
+60		num		16
+3.75		num		17
+3		num		18
